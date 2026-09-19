@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="《骨鸣：放置冒险》是一款以装备、技能与角色构筑为核心的单机 MMORPG 放置游戏。"
+      content="《骨鸣：放置冒险》是一款以装备构筑、自动战斗、生产制造、灵宠培养、百务代行与悬赏委托为核心的单机 MMORPG 放置游戏。"
     />
     <meta name="theme-color" content="#080914" />
     <title>骨鸣：放置冒险｜官方网站</title>
@@ -14,7 +14,7 @@
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080914'/%3E%3Cpath d='M32 8 46 18v28L32 56 18 46V18Z' fill='none' stroke='%23d8af5b' stroke-width='3'/%3E%3Ccircle cx='32' cy='26' r='6' fill='none' stroke='%23f2dfad' stroke-width='3'/%3E%3Cpath d='M32 32v15' stroke='%23f2dfad' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260920-4" />
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
@@ -29,7 +29,7 @@
       </a>
       <nav>
         <a href="#core">核心体验</a>
-        <a href="#play">玩法</a>
+        <a href="#features">特色系统</a>
         <a href="#screens">实机画面</a>
         <span class="development-tag">开发中</span>
       </nav>
@@ -153,28 +153,34 @@
           <div class="showcase-screen">
             <figure id="shot-inventory" data-shot-panel="inventory">
               <img
-                src="./assets/game-inventory.jpg"
+                src="./assets/game-inventory.png"
                 alt="游戏内物资背包界面，展示完美装备、满级宝石、附魔与强化材料"
-                width="1284"
-                height="768"
+                width="2568"
+                height="1602"
+                loading="lazy"
+                decoding="async"
               />
               <figcaption>开发中画面 · 物资背包</figcaption>
             </figure>
             <figure id="shot-skills" data-shot-panel="skills" hidden>
               <img
-                src="./assets/game-skills.jpg"
+                src="./assets/game-skills.png"
                 alt="游戏内功法技能界面，左侧选择技能，右侧编排自动释放顺序"
-                width="1284"
-                height="768"
+                width="2568"
+                height="1602"
+                loading="lazy"
+                decoding="async"
               />
               <figcaption>开发中画面 · 功法技能</figcaption>
             </figure>
             <figure id="shot-battle" data-shot-panel="battle" hidden>
               <img
-                src="./assets/game-battle.jpg"
+                src="./assets/game-battle.png"
                 alt="游戏内阶段副本战斗概览，展示双方生命、状态与行动时间线"
-                width="1284"
-                height="768"
+                width="2568"
+                height="1602"
+                loading="lazy"
+                decoding="async"
               />
               <figcaption>开发中画面 · 战斗概览</figcaption>
             </figure>
@@ -220,9 +226,129 @@
         </div>
       </section>
 
+      <section class="feature-depth" id="features" aria-labelledby="features-title">
+        <div class="feature-depth-heading reveal">
+          <p class="section-index"><span>04</span> 四条相互咬合的成长路径</p>
+          <h2 id="features-title">战斗给出目标，<br />世界提供答案。</h2>
+          <p>
+            一次采集可以成为一张配方的材料，一只灵宠可以走进战场或协助代行，一份悬赏也会把你带回已经掌握的系统。它们不是彼此孤立的菜单，而是同一段成长旅程。
+          </p>
+        </div>
+
+        <div class="feature-stories">
+          <article class="feature-story reveal">
+            <figure class="feature-visual">
+              <img
+                src="./assets/game-production.png"
+                alt="生产合成界面，展示炼金配方、产物、材料、熟练度与制造条件"
+                width="2568"
+                height="1602"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption><span>实机画面</span><small>生产合成 · 制造</small></figcaption>
+            </figure>
+            <div class="feature-copy">
+              <p class="feature-no">01 / PRODUCTION</p>
+              <h3>让每份材料，<br />都有清楚的去向。</h3>
+              <p>
+                把采集、狩猎、钓鱼与挑战获得的材料，转化为药品、食物、生活工具或加工材料。先选择炼金、木工或烹饪，再核对持有量、金币、成功率与暴击率；结果当场结算，产物直接入包。
+              </p>
+              <ul class="feature-facts" aria-label="生产制造特点">
+                <li><strong>3</strong><span>炼金 · 木工 · 烹饪</span></li>
+                <li><strong>清楚</strong><span>材料与结果同时呈现</span></li>
+                <li><strong>专注</strong><span>补给、工具与加工</span></li>
+              </ul>
+              <p class="feature-note">装备仍由正式挑战投放；制造专注于补给与生活生产，不制造一条重复的装备来源。</p>
+            </div>
+          </article>
+
+          <article class="feature-story feature-story--reverse reveal">
+            <figure class="feature-visual">
+              <img
+                src="./assets/game-pet.png"
+                alt="灵宠界面，展示完美初代烬尾兽的资质、战斗属性、技能与出战状态"
+                width="2568"
+                height="1602"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption><span>实机画面</span><small>灵宠 · 宠物栏</small></figcaption>
+            </figure>
+            <div class="feature-copy">
+              <p class="feature-no">02 / COMPANION</p>
+              <h3>不是挂件，<br />是会独立作战的伙伴。</h3>
+              <p>
+                从灵兽蛋孵化开始，每只灵宠都拥有谱系、品质、四项资质、成长率与自己的技能。出战后，它拥有独立生命、攻防与速度，会被敌人选为目标，也会按自身策略自动行动并从胜利中成长。
+              </p>
+              <ul class="feature-facts" aria-label="灵宠玩法特点">
+                <li><strong>4</strong><span>生命 · 攻击 · 护甲 · 速度资质</span></li>
+                <li><strong>8</strong><span>谱系与普通技能位</span></li>
+                <li><strong>长期</strong><span>洗炼 · 技能 · 繁殖</span></li>
+              </ul>
+              <p class="feature-note">角色与灵宠使用各自的战斗属性；灵宠技能不会挤占角色的技能编排。</p>
+            </div>
+          </article>
+
+          <article class="feature-story reveal">
+            <figure class="feature-visual">
+              <img
+                src="./assets/game-pet-duty.png"
+                alt="百务代行界面，左侧为可选任务，右侧为三项采集队列和助行灵宠"
+                width="2568"
+                height="1602"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption><span>实机画面</span><small>百务代行 · 任务编排</small></figcaption>
+            </figure>
+            <div class="feature-copy">
+              <p class="feature-no">03 / PET DUTY</p>
+              <h3>把重复交给队列，<br />把顺序留给自己。</h3>
+              <p>
+                将已经开放的采集点与亲自首通的阶段副本编入有限队列，调整执行次数与先后顺序，再选择一只助行灵宠。每轮都按你的编排执行，正式奖励与手动玩法保持一致。
+              </p>
+              <ul class="feature-facts" aria-label="百务代行特点">
+                <li><strong>1–10</strong><span>自定循环轮次</span></li>
+                <li><strong>有序</strong><span>拖拽编排执行顺序</span></li>
+                <li><strong>可控</strong><span>结算边界主动停止</span></li>
+              </ul>
+              <p class="feature-note">百务代行只在应用运行时执行，不提供离线收益，也不会替你完成从未亲自攻克的首通。</p>
+            </div>
+          </article>
+
+          <article class="feature-story feature-story--reverse reveal">
+            <figure class="feature-visual">
+              <img
+                src="./assets/game-bounty.png"
+                alt="悬赏委托界面，以六张卡片展示品质、难度、委托说明、任务目标与准确奖励"
+                width="2568"
+                height="1602"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption><span>实机画面</span><small>悬赏委托 · 可接委托</small></figcaption>
+            </figure>
+            <div class="feature-copy">
+              <p class="feature-no">04 / BOUNTY</p>
+              <h3>给长期成长，<br />一个看得见的短目标。</h3>
+              <p>
+                每轮最多六份悬赏，把战斗、采集、制造与装备培养变成清楚的阶段目标。比较难度与准确奖励后，选择至多三项同步推进；完成后再回到委托板亲自领取成果。
+              </p>
+              <ul class="feature-facts" aria-label="悬赏委托特点">
+                <li><strong>6</strong><span>每轮最多可选委托</span></li>
+                <li><strong>3</strong><span>同时保留的已接委托</span></li>
+                <li><strong>多路</strong><span>战斗 · 采集 · 制造 · 淬炼</span></li>
+              </ul>
+              <p class="feature-note">稀有与传说委托还可能出现专属首领；胜利会完成目标，但奖励仍由你主动领取。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="systems" aria-labelledby="systems-title">
         <div class="systems-heading reveal">
-          <p class="section-index"><span>04</span> 一段完整的成长旅程</p>
+          <p class="section-index"><span>05</span> 一段完整的成长旅程</p>
           <h2 id="systems-title">战斗之外，<br />世界仍在运转。</h2>
         </div>
         <div class="system-grid">
@@ -239,17 +365,17 @@
           <article class="system-card reveal">
             <p>03</p>
             <h3>灵宠同行</h3>
-            <span>培养独立成长的伙伴，让不同资质、技能与血脉成为新的搭配维度。</span>
+            <span>孵化、培养并选择出战伙伴，让资质、技能与谱系成为新的搭配维度。</span>
           </article>
           <article class="system-card reveal">
             <p>04</p>
-            <h3>采集与生产</h3>
-            <span>从资源采集到锻造、合成与强化，建立属于自己的装备成长路径。</span>
+            <h3>生产制造</h3>
+            <span>把采集与挑战材料转成药品、食物、生活工具和加工材料。</span>
           </article>
           <article class="system-card reveal">
             <p>05</p>
-            <h3>悬赏与势力</h3>
-            <span>在短期目标中认识地域、人物与阵营，获得不同于副本的长期积累。</span>
+            <h3>悬赏委托</h3>
+            <span>比较目标与准确奖励，最多接取三项，让日常成长始终拥有短期方向。</span>
           </article>
           <article class="system-card system-card--accent reveal">
             <p>06</p>
@@ -270,7 +396,7 @@
         </div>
         <div class="world-story-shade" aria-hidden="true"></div>
         <div class="world-story-copy reveal">
-          <p class="section-index"><span>05</span> 无名者的世界</p>
+          <p class="section-index"><span>06</span> 无名者的世界</p>
           <h2 id="world-title">第十神的名字，<br />早已被天道抹去。</h2>
           <p>
             九神以天道之名统御九州，又以天劫阻断凡俗登天。你从一枚残破古玉中听见被遗忘的真相——天劫并非天地法则，而是一道可以被打破的禁制。
@@ -280,7 +406,7 @@
       </section>
 
       <section class="final-call" aria-labelledby="final-title">
-        <p class="section-index reveal"><span>06</span> 仍在开发中</p>
+        <p class="section-index reveal"><span>07</span> 仍在开发中</p>
         <h2 id="final-title" class="reveal">一款愿意尊重你时间的<br />单机 MMORPG 放置游戏。</h2>
         <div class="final-meta reveal">
           <span>低操作自动战斗</span>
@@ -297,6 +423,6 @@
       <p>当前页面与实机画面均为开发中内容，最终品质与规则以正式版本为准。</p>
     </footer>
 
-    <script src="./site.js" defer></script>
+    <script src="./site.js?v=20260920-4" defer></script>
   </body>
 </html>
