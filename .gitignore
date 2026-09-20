@@ -6,3 +6,4 @@ site-package-*.tar.gz
 # EdgeOne
 .edgeone/
 .edgeone-token*
+/website.zip
