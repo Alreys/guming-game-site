@@ -2,3 +2,7 @@
 .sites-runtime/
 preview-*.png
 site-package-*.tar.gz
+
+# EdgeOne
+.edgeone/
+.edgeone-token*
