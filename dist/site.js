@@ -52,3 +52,24 @@ const header = document.querySelector('.site-header');
 const updateHeader = () => header.classList.toggle('is-scrolled', window.scrollY > 32);
 updateHeader();
 window.addEventListener('scroll', updateHeader, { passive: true });
+
+const trialTrigger = document.querySelector('[data-open-trial]');
+const trialDialog = document.querySelector('#trial-dialog');
+
+trialTrigger.addEventListener('click', () => {
+  trialDialog.showModal();
+  document.documentElement.classList.add('is-trial-open');
+});
+
+trialDialog.addEventListener('click', (event) => {
+  if (event.target !== trialDialog) return;
+  const bounds = trialDialog.getBoundingClientRect();
+  const outsideDialog = event.clientX < bounds.left || event.clientX > bounds.right
+    || event.clientY < bounds.top || event.clientY > bounds.bottom;
+  if (outsideDialog) trialDialog.close();
+});
+
+trialDialog.addEventListener('close', () => {
+  document.documentElement.classList.remove('is-trial-open');
+  trialTrigger.focus({ preventScroll: true });
+});

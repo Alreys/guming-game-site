@@ -169,13 +169,86 @@ img {
   color: var(--gold-bright);
 }
 
-.development-tag {
+.site-header nav .development-tag {
   padding: 0.36rem 0.72rem;
   border: 1px solid rgba(216, 175, 91, 0.32);
   border-radius: 999px;
   color: var(--gold-bright);
   background: rgba(8, 9, 20, 0.44);
+  font: inherit;
   letter-spacing: 0.14em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.site-header nav .development-tag:hover,
+.site-header nav .development-tag:focus-visible {
+  border-color: var(--gold);
+  background: rgba(216, 175, 91, 0.12);
+}
+
+html.is-trial-open {
+  overflow: hidden;
+}
+
+.trial-dialog {
+  width: min(22rem, calc(100vw - 2rem));
+  max-height: calc(100svh - 2rem);
+  margin: auto;
+  padding: 1.5rem;
+  overflow-y: auto;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  color: var(--paper);
+  background: var(--ink-soft);
+  box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+.trial-dialog::backdrop {
+  background: rgba(3, 4, 10, 0.65);
+  backdrop-filter: blur(4px);
+}
+
+.trial-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.trial-option {
+  display: flex;
+  padding: 0.75rem 0.5rem;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.75rem;
+  border: 0;
+  border-radius: 0.45rem;
+  color: var(--gold-bright);
+  background: transparent;
+  font: inherit;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: background-color 180ms ease;
+}
+
+.trial-option svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.trial-option:disabled {
+  color: var(--dim);
+  cursor: not-allowed;
+}
+
+.trial-option:not(:disabled):hover {
+  background: rgba(216, 175, 91, 0.08);
+}
+
+.trial-option:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
 }
 
 .hero {
@@ -1342,13 +1415,13 @@ footer span {
   }
 
   .brand-copy small,
-  .site-header nav a {
+  .site-header nav a:not(.development-tag) {
     display: none;
   }
 
   .brand-copy strong { font-size: 1.2rem; }
 
-  .development-tag {
+  .site-header nav .development-tag {
     font-size: 0.72rem;
   }
 
